@@ -36,7 +36,7 @@ class _ArtikelScreenState extends State <ArtikelScreen>{
                   onTap: (){
                     Navigator.push(context,MaterialPageRoute(
                       builder:  (context) => DetailArtikelScreen(
-                        title: ArtikelProvider.Artikel.data![index].title,
+                        title: ArtikelProvider.Artikel.data![index].title!,
                       ),),);
                   },
 
@@ -69,8 +69,8 @@ class _ArtikelScreenState extends State <ArtikelScreen>{
 
                 );
 
-            }
-
+            },
+            padding: const EdgeInsets.all(18),
       );
     }      
     )
